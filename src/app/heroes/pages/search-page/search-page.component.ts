@@ -34,7 +34,7 @@ export class SearchPageComponent {
 
     this.selectedHero = event.option.value;
     this.searchInput.setValue(this.selectedHero!.superhero)
-    //this.router.navigate(['/heroes/list'])
+    this.router.navigateByUrl(`/heroes/${this.selectedHero?.id}`)
   }
 
 }
